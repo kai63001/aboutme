@@ -1,4 +1,4 @@
-name: romeo CI
+name: romeo CI/CD PUSH
 
 on:
   push:
