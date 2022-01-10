@@ -113,8 +113,6 @@ export default function Home() {
                     <FontAwesomeIcon size="3x" icon={['fas', 'fire']} />
                     <p className="mt-2 text-smm">FIREBASE</p>
                   </span>
-
-
                   <span className="hover:text-orange-300 text-gray-300">
                     <FontAwesomeIcon size="3x" icon={['fas', 'database']} />
                     <p className="mt-2 text-smm">SQL DATABASE</p>
@@ -142,14 +140,17 @@ export default function Home() {
                     </svg>
                     <p className="mt-2 text-smm">FLUTTER</p>
                   </span>
-                  <span className="hover:text-orange-200 text-gray-300">
+                  <span className="hover:text-orange-300 text-gray-300">
                     <FontAwesomeIcon size="3x" icon={['fab', 'unity']} />
                     <p className="mt-2 text-smm">UNITY</p>
                   </span>
-                  <span className="hover:text-orange-200 text-gray-300">
+                  <span className="hover:text-orange-300 text-gray-300">
                     <FontAwesomeIcon size="3x" icon={['fab', 'php']} />
                     <p className="mt-2 text-smm">PHP</p>
                   </span>
+                </div>
+                <div className="text-center mt-5">
+                  <button className="bg-orange-600 px-5 py-2 rounded-lg "><FontAwesomeIcon className='mr-2 down-animation' size="lg" icon={['fas', 'arrow-down']} /> Show more</button>
                 </div>
               </div>
             </div>
