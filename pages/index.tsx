@@ -17,7 +17,7 @@ export default function Home() {
     <div>
       <div className="parallax">
         <div className="parallax_layer parallax_layer_4 text-center mt-40">
-          <h1 className="text-7xl font-mochiy">Hy! I am Supanat</h1>
+          <h1 className="text-7xl font-mochiy">Hy! I am Supanat <span className="wave-emoji"><img alt="👋" draggable="false" src="https://twemoji.maxcdn.com/2/72x72/1f44b.png"></img></span></h1>
           <div className="mt-5 text-center font-mochiy">
             I code and love doing what I can't. and I like what I do.
           </div>
