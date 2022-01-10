@@ -6,12 +6,12 @@
     box-sizing: border-box;
 }
 
-html,body {
+html,
+body {
     background-color: #fedcc8;
     font-family: "Fredoka One", cursive;
     // scroll-behavior: smooth !important;
 }
-
 
 .font-mochiy {
     font-family: "Mochiy Pop P One", sans-serif !important;
@@ -86,7 +86,7 @@ html,body {
     border-left: 1px solid #e6ecf8;
 }
 ::-webkit-scrollbar-thumb {
-    background-color: #2e253a;
+    background-color: #20172c;
 }
 
 .psitck {
@@ -117,24 +117,32 @@ html,body {
 
 @keyframes wave {
     0% {
-      transform: rotate(0deg);
+        transform: rotate(0deg);
     }
     10% {
-      transform: rotate(-10deg);
+        transform: rotate(-10deg);
     }
     20% {
-      transform: rotate(12deg);
+        transform: rotate(12deg);
     }
     30% {
-      transform: rotate(-10deg);
+        transform: rotate(-10deg);
     }
     40% {
-      transform: rotate(9deg);
+        transform: rotate(9deg);
     }
     50% {
-      transform: rotate(0deg);
+        transform: rotate(0deg);
     }
     100% {
-      transform: rotate(0deg);
+        transform: rotate(0deg);
     }
-  }
+}
+
+.text-smm {
+    font-size: 10px;
+}
+
+.skillsIcon {
+    fill: rgb(209 213 219);
+}
