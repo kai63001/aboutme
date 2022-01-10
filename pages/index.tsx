@@ -43,7 +43,7 @@ export default function Home() {
                   <button onClick={aboutScroll}>About</button>
                 </li>
                 <li>
-                  <button onClick={aboutScroll}>Skills</button>
+                  <button onClick={skillsScroll}>Skills</button>
                 </li>
               </ul>
             </div>
@@ -53,6 +53,12 @@ export default function Home() {
             <div className="text-center">
               <h2 id="about" ref={about} className="text-3xl">Hi, I’m Supanat Konprom. Nice to meet you.</h2>
               <p className="mt-3 text-gray-400 w-3/4 m-auto">Student Software Engineer 🚀 Experience building web, mobile applications and games with other cool libraries and frameworks.</p>
+            </div>
+            <div className="grid grid-cols-7 gap-4 mt-10">
+              <div className="col-span-3"><img src="/images/whatido.png" alt="" /></div>
+              <div className="">
+                <h2 id="skills" className="text-3xl" ref={skills}>What i do</h2>
+              </div>
             </div>
           </div>
         </div>
