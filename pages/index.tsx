@@ -45,7 +45,7 @@ export default function Home() {
           <img className="img" src="/images/layer1.png" />
         </div>
         <div className="parallax_cover">
-          <nav id="navbar" className="psitck text-white bg-main pb-6 pt-4">
+          <nav id="navbar" className="psitck text-white bg-main pb-6 pt-4 z-100">
             <div className="max-w-screen-xl mx-auto mt-3 px-2 xs:px-0 flex justify-between">
               <h2>HELLO</h2>
               <ul className="flex space-x-5">
@@ -150,7 +150,7 @@ export default function Home() {
                   </span>
                 </div>
                 <div className="text-center mt-5">
-                  <button className="bg-orange-600 px-5 py-2 rounded-lg "><FontAwesomeIcon className='mr-2 down-animation' size="lg" icon={['fas', 'arrow-down']} /> Show more</button>
+                  <button className="bg-orange-600 px-5 py-2 rounded-lg focus:outline outline-offset-1 outline-orange-900"><FontAwesomeIcon className='mr-2 down-animation' size="lg" icon={['fas', 'arrow-down']} /> Show more</button>
                 </div>
               </div>
             </div>
