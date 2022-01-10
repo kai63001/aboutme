@@ -25,11 +25,23 @@ export default function Home() {
           <img className="img" src="/images/layer1.png" />
         </div>
         <div className="parallax_cover">
-          <nav id="navbar" className=" psitck text-white py-3">
-            <div className="max-w-screen-xl mx-auto mt-3 px-2 xs:px-0">
-              asdasd
+          <nav id="navbar" className=" psitck text-white py-3 bg-main">
+            <div className="max-w-screen-xl mx-auto mt-3 px-2 xs:px-0 flex justify-between">
+              <h2>HELLO</h2>
+              <ul className="flex space-x-10">
+                <li>
+                  <a href="#">asdasd</a>
+                </li>
+                <li>
+                  <a href="#">asdasd</a>
+                </li>
+              </ul>
             </div>
           </nav>
+          <br />
+          <div className="max-w-screen-xl mx-auto mt-3 px-2 xs:px-0 text-white text-lg">
+            asdasdasdasdasdasdasdadasdasdas
+          </div>
         </div>
       </div>
     </div>

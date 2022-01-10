@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Mochiy+Pop+P+One&display=swap');
 * {
     box-sizing: border-box;
 }
@@ -9,6 +9,8 @@
 html,
 body {
     background-color: #fedcc8;
+    font-family: 'Fredoka One', cursive;
+
 }
 
 .font-mochiy {
