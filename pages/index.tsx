@@ -4,8 +4,14 @@ import { useRef } from 'react'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
-  const about:any = useRef(null)
-  const executeScroll:any = () => about?.current.scrollIntoView({behavior:"smooth"})    
+
+  //skills 
+  const skills: any = useRef(null)
+  const skillsScroll = () => skills?.current.scrollIntoView({ behavior: "smooth" })
+
+  //about
+  const about: any = useRef(null)
+  const aboutScroll: any = () => about?.current.scrollIntoView({ behavior: "smooth" })
 
   return (
     <div>
@@ -34,13 +40,10 @@ export default function Home() {
               <h2>HELLO</h2>
               <ul className="flex space-x-10">
                 <li>
-                  <a href="#">Home</a>
+                  <button onClick={aboutScroll}>About</button>
                 </li>
                 <li>
-                  <button onClick={executeScroll}>About</button>
-                </li>
-                <li>
-                  <button onClick={executeScroll}>Skills</button>
+                  <button onClick={aboutScroll}>Skills</button>
                 </li>
               </ul>
             </div>
@@ -49,8 +52,7 @@ export default function Home() {
           <div className="max-w-screen-xl mx-auto mt-3 px-2 xs:px-0 text-white text-lg">
             <div className="text-center">
               <h2 id="about" ref={about} className="text-3xl">Hi, I’m Supanat Konprom. Nice to meet you.</h2>
-              <p className="mt-3 text-gray-400">Since beginning my journey as a freelance designer nearly 10 years ago, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use. I'm quietly confident, naturally curious, and perpetually working on improving my chops one design problem at a time.
-              </p>
+              <p className="mt-3 text-gray-400 w-3/4 m-auto">Student Software Engineer 🚀 Experience building web, mobile applications and games with other cool libraries and frameworks.</p>
             </div>
           </div>
         </div>
