@@ -1,4 +1,5 @@
 const isProd = process.env.NODE_ENV === "production";
+const path = require('path')
 
 module.exports = {
   target: 'serverless',
@@ -9,5 +10,8 @@ module.exports = {
   }),
   images: {
     loader: 'imgix',
+  },
+  sassOptions: {
+    includePaths: [path.join(__dirname, 'styles')],
   },
 }
