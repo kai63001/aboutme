@@ -1,84 +1,95 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap");
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html,
 body {
-  background-color: #FEDCC8;
+    background-color: #fedcc8;
 }
 
 .font-mochiy {
-    font-family: 'Mochiy Pop P One', sans-serif !important;
+    font-family: "Mochiy Pop P One", sans-serif !important;
     color: #2e253a;
 }
 
 .parallax {
-  perspective: 100px;
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: auto;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  right: 0;
-  bottom: 0;
-  margin-left: -50%;
+    perspective: 100px;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 0;
+    bottom: 0;
+    margin-left: -50%;
 }
 
 .parallax_layer {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
-.parallax_layer img {
-  display: block;
-  position: absolute;
-  bottom: 0;
+.parallax_layer .img {
+    display: block;
+    position: absolute;
+    bottom: 0;
 }
 
 .parallax_cover {
-  background: #2e253a;
-  display: block;
-  position: absolute;
-  top: 100%;
-  margin-top: -10px;
-  left: 0;
-  right: 0;
-  height: 2000px;
-  z-index: 2;
+    background: #2e253a;
+    display: block;
+    position: absolute;
+    top: 100%;
+    margin-top: -10px;
+    left: 0;
+    right: 0;
+    height: 2000px;
+    z-index: 2;
+}
+
+.bg-main {
+    background-color: #2e253a;
 }
 
 .parallax_layer_4 {
-    transform: translateZ(-150px) scale(2.5);
-  }
+    transform: translateZ(-500px) scale(6);
+}
 
 .parallax_layer_3 {
-  transform: translateZ(-150px) scale(2.5);
+    transform: translateZ(-150px) scale(2.5);
 }
 
 .parallax_layer_2 {
-  transform: translateZ(-100px) scale(2);
+    transform: translateZ(-100px) scale(2);
 }
 
 .parallax_layer_1 {
-  transform: translateZ(-50px) scale(1.5);
+    transform: translateZ(-50px) scale(1.5);
 }
 
 .parallax_layer_0 {
-  transform: translateZ(0px) scale(1);
-  z-index: 1;
+    transform: translateZ(0px) scale(1);
+    z-index: 1;
 }
 
 ::-webkit-scrollbar {
     width: 6px;
-    border-left: 1px solid #E6ECF8;
+    border-left: 1px solid #e6ecf8;
 }
 ::-webkit-scrollbar-thumb {
     background-color: #2e253a;
+}
+
+.psitck {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    font-size: 20px;
 }
