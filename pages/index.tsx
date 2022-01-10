@@ -38,12 +38,15 @@ export default function Home() {
           <nav id="navbar" className="psitck text-white bg-main pb-6 pt-4">
             <div className="max-w-screen-xl mx-auto mt-3 px-2 xs:px-0 flex justify-between">
               <h2>HELLO</h2>
-              <ul className="flex space-x-10">
+              <ul className="flex space-x-5">
                 <li>
-                  <button onClick={aboutScroll}>About</button>
+                  <button className="hover:bg-purple-800 rounded-md px-4 py-2" onClick={aboutScroll}>About</button>
                 </li>
                 <li>
-                  <button onClick={skillsScroll}>Skills</button>
+                  <button className="hover:bg-purple-800 rounded-md px-4 py-2" onClick={skillsScroll}>Skills</button>
+                </li>
+                <li>
+                  <button className="hover:bg-purple-800 rounded-md px-4 py-2" onClick={skillsScroll}>Open source</button>
                 </li>
               </ul>
             </div>
@@ -54,9 +57,9 @@ export default function Home() {
               <h2 id="about" ref={about} className="text-3xl">Hi, I’m Supanat Konprom. Nice to meet you.</h2>
               <p className="mt-3 text-gray-400 w-3/4 m-auto">Student Software Engineer 🚀 Experience building web, mobile applications and games with other cool libraries and frameworks.</p>
             </div>
-            <div className="grid grid-cols-7 gap-4 mt-10">
-              <div className="col-span-3"><img src="/images/whatido.png" alt="" /></div>
-              <div className="">
+            <div className="grid sm:grid-cols-7 grid-cols-1 gap-4 mt-10">
+              <div className="col-span-3 sm:order-1 order-2"><img src="/images/whatido.png" alt="" /></div>
+              <div className="sm:order-2 order-1">
                 <h2 id="skills" className="text-3xl" ref={skills}>What i do</h2>
               </div>
             </div>
