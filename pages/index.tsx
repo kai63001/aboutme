@@ -1,4 +1,3 @@
-import Head from 'next/head'
 import Image from 'next/image'
 import { useEffect, useRef, useState } from 'react'
 import styles from '../styles/Home.module.css'
@@ -11,23 +10,18 @@ import useOnScreen from '@/lib/useOnScreen'
 
 
 export default function Home() {
-  const [scrollY ,setScrollY] = useState(0);
   const page: any = useRef(null)
 
-
-  //skills 
+  //? skill
   const skills: any = useRef(null)
   const skillsScroll = () => skills?.current.scrollIntoView({ behavior: "smooth" })
   const skillisVisible = useOnScreen(skills)
-  //about
+  //? about
   const about: any = useRef(null)
   const aboutScroll: any = () => about?.current.scrollIntoView({ behavior: "smooth" })
   const aboutisVisible = useOnScreen(about)
 
   library.add(fab, fas)
-
-
-
 
   return (
     <div>
