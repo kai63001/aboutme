@@ -21,6 +21,7 @@ body {
 .parallax {
     perspective: 100px;
     height: 100vh;
+    width: auto;
     overflow-x: hidden;
     overflow-y: auto;
     position: absolute;
@@ -43,6 +44,7 @@ body {
     display: block;
     position: absolute;
     bottom: 0;
+    width: 100%;
 }
 
 .parallax_cover {
