@@ -432,7 +432,6 @@ const MoreSkills = () => {
             viewBox="0 0 256 256"
             version="1.1"
             xmlns="http://www.w3.org/2000/svg"
-            preserveAspectRatio="xMidYMid"
           >
             <g>
               <path
@@ -568,6 +567,9 @@ const MoreSkills = () => {
         </button>
         <button className="bg-gray-300 text-main rounded-md px-3 hover:bg-orange-300 mr-3">
           Message broker concept
+        </button>
+        <button className="bg-gray-300 text-main rounded-md px-3 hover:bg-orange-300 mr-3">
+          Digital Ocean
         </button>
       </div>
     </div>

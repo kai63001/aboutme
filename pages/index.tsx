@@ -12,12 +12,22 @@ import MoreSkills from "@/components/skils/more";
 export default function Home() {
   //* set show more skills
   const [showMore, setShowMore] = useState(true);
+  const setShowLessSkill = () => {
+    if(showMore == true){
+      setShowMore(false)
+    }else{
+      setShowMore(true)
+      skillsScroll();
+    }
+  }
 
   //? skills
   const skills: any = useRef(null);
   const skillsScroll = () =>
     skills?.current.scrollIntoView({ behavior: "smooth" });
   const skillisVisible = useOnScreen(skills);
+
+
   //? about
   const about: any = useRef(null);
   const aboutScroll: any = () =>
@@ -119,7 +129,7 @@ export default function Home() {
                 {showMore ? <LessSkills/> : <MoreSkills/>}
                 <div className="text-center mt-5">
                   <button
-                    onClick={() => setShowMore(!showMore)}
+                    onClick={setShowLessSkill}
                     className="bg-orange-600 px-5 py-2 rounded-lg focus:outline outline-offset-1 outline-orange-900"
                   >
                 {showMore ? <FontAwesomeIcon
