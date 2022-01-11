@@ -27,8 +27,6 @@ export default function Home() {
   useEffect(() => {
     if (typeof window !== "undefined") {
       window.addEventListener("scroll", handleScroll)
-      console.log(scrollY)
-      console.log( about.current.offsetTop )
     }
     return () => window.removeEventListener("scroll", handleScroll)
   }, [handleScroll])
@@ -57,11 +55,7 @@ export default function Home() {
         <div className="parallax_cover">
           <nav id="navbar" className="psitck text-white bg-main pb-6 pt-4 z-100">
             <div className="max-w-screen-xl mx-auto mt-3 px-2 xs:px-0 flex justify-between">
-              <h2 onClick={()=>{
-                console.log(about.current.offsetTop)
-                console.log(window.scrollY - window.screen.height + 286)
-                console.log(skills.current.offsetTop)
-              }}>HELLO</h2>
+              <h2>HELLO</h2>
               <ul className="flex space-x-5">
                 <li>
                   <button className={`hover:bg-purple-800 ${scrollY >= about?.current?.offsetTop && scrollY < skills.current?.offsetTop ? 'bg-purple-800':''} rounded-md px-4 py-2`} onClick={aboutScroll}>About</button>
