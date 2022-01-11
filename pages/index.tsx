@@ -13,13 +13,13 @@ export default function Home() {
   //* set show more skills
   const [showMore, setShowMore] = useState(true);
   const setShowLessSkill = () => {
-    if(showMore == true){
-      setShowMore(false)
-    }else{
-      setShowMore(true)
+    if (showMore == true) {
+      setShowMore(false);
+    } else {
+      setShowMore(true);
       skillsScroll();
     }
-  }
+  };
 
   //? skills
   const skills: any = useRef(null);
@@ -27,12 +27,17 @@ export default function Home() {
     skills?.current.scrollIntoView({ behavior: "smooth" });
   const skillisVisible = useOnScreen(skills);
 
-
   //? about
   const about: any = useRef(null);
   const aboutScroll: any = () =>
     about?.current.scrollIntoView({ behavior: "smooth" });
   const aboutisVisible = useOnScreen(about);
+
+  //? project
+  const project: any = useRef(null);
+  const projectScroll: any = () =>
+    project?.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+  const projectisVisible = useOnScreen(project);
 
   library.add(fab, fas);
 
@@ -96,10 +101,15 @@ export default function Home() {
                 </li>
                 <li>
                   <button
-                    className={`hover:bg-purple-800 rounded-md px-4 py-2`}
-                    onClick={skillsScroll}
+                    className={`hover:bg-purple-800 ${
+                      !aboutisVisible &&
+                      !skillisVisible &&
+                      projectisVisible &&
+                      "bg-purple-800"
+                    } rounded-md px-4 py-2`}
+                    onClick={projectScroll}
                   >
-                    Open source
+                    Project
                   </button>
                 </li>
               </ul>
@@ -126,29 +136,40 @@ export default function Home() {
               </div>
               <div className="sm:order-2 col-span-4 order-1">
                 <h2 className="text-3xl">What i do</h2>
-                {showMore ? <LessSkills/> : <MoreSkills/>}
+                {showMore ? <LessSkills /> : <MoreSkills />}
                 <div className="text-center mt-5">
                   <button
                     onClick={setShowLessSkill}
                     className="bg-orange-600 px-5 py-2 rounded-lg focus:outline outline-offset-1 outline-orange-900"
                   >
-                {showMore ? <FontAwesomeIcon
-                      className="mr-2 down-animation"
-                      size="lg"
-                      icon={["fas", "arrow-down"]}
-                    /> : <FontAwesomeIcon
-                    className="mr-2 down-animation"
-                    size="lg"
-                    icon={["fas", "arrow-up"]}
-                  />}
-
-                    {" "}
-                    
-                {showMore ? 'Show more' : 'Show less'}
-
+                    {showMore ? (
+                      <FontAwesomeIcon
+                        className="mr-2 down-animation"
+                        size="lg"
+                        icon={["fas", "arrow-down"]}
+                      />
+                    ) : (
+                      <FontAwesomeIcon
+                        className="mr-2 down-animation"
+                        size="lg"
+                        icon={["fas", "arrow-up"]}
+                      />
+                    )}{" "}
+                    {showMore ? "Show more" : "Show less"}
                   </button>
                 </div>
               </div>
+            </div>
+            <br />
+            <br />
+            <br />
+            <br />
+            <div
+              ref={project}
+              id="project"
+              className="grid sm:grid-cols-7 grid-cols-1 gap-4"
+            >
+              <h2 className="text-3xl">Project</h2>
             </div>
           </div>
         </div>

@@ -55,7 +55,7 @@ body {
     margin-top: -10px;
     left: 0;
     right: 0;
-    height: 2000px;
+    height: 5000px;
     z-index: 2;
 }
 
@@ -109,6 +109,10 @@ body {
 }
 
 #skills {
+    scroll-margin-top: 100px;
+}
+
+#project {
     scroll-margin-top: 100px;
 }
 .wave-emoji {
