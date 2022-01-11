@@ -21,8 +21,8 @@ body {
 .parallax {
     perspective: 100px;
     height: 100vh;
-    // overflow-x: hidden;
-    // overflow-y: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
     position: absolute;
     top: 0;
     left: 50%;
@@ -37,6 +37,7 @@ body {
     right: 0;
     bottom: 0;
     left: 0;
+    
 }
 .parallax_layer .img {
     display: block;
@@ -102,7 +103,7 @@ body {
 }
 
 #skills {
-    scroll-margin-top: 120px;
+    scroll-margin-top: 100px;
 }
 .wave-emoji {
     -webkit-animation-duration: 1.8s;
