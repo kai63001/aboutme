@@ -10,12 +10,12 @@ const MoreSkills = () => {
       <h3 className="text-2xl border-b-2 pb-2 border-purple-500 w-14 whitespace-nowrap">
         Programming Languages
       </h3>
-      <div className="flex mt-3 text-center flex-wrap space-x-5">
-        <span className="hover:text-orange-300 text-gray-300">
+      <div className="flex mt-3 text-center flex-wrap">
+        <span className="hover:text-orange-300 text-gray-300 mr-3">
           <FontAwesomeIcon size="3x" icon={["fab", "js-square"]} />
           <p className="mt-2 text-smm">JAVASCRIPT</p>
         </span>
-        <span className="hover:text-orange-300 text-gray-300 fill-gray-300 hover:fill-orange-300 text-center">
+        <span className="hover:text-orange-300 text-gray-300 fill-gray-300 hover:fill-orange-300 text-center mr-3">
           <svg
             className="rounded-md ml-1 mt-1 text-center"
             width="50px"
@@ -29,19 +29,19 @@ const MoreSkills = () => {
           </svg>
           <p className="mt-2 text-smm">TYPESCRIPT</p>
         </span>
-        <span className="hover:text-orange-300 text-gray-300">
+        <span className="hover:text-orange-300 text-gray-300 mr-3">
           <FontAwesomeIcon size="3x" icon={["fab", "python"]} />
           <p className="mt-2 text-smm">PYTHON</p>
         </span>
-        <span className="hover:text-orange-300 text-gray-300">
+        <span className="hover:text-orange-300 text-gray-300 mr-3">
           <FontAwesomeIcon size="3x" icon={["fab", "php"]} />
           <p className="mt-2 text-smm">PHP</p>
         </span>
-        <span className="hover:text-orange-300 text-gray-300">
+        <span className="hover:text-orange-300 text-gray-300 mr-3">
           <FontAwesomeIcon size="3x" icon={["fab", "java"]} />
           <p className="mt-2 text-smm">JAVA</p>
         </span>
-        <span className="hover:text-orange-300 text-gray-300 fill-gray-300 hover:fill-orange-300 text-center">
+        <span className="hover:text-orange-300 text-gray-300 fill-gray-300 hover:fill-orange-300 text-center mr-3">
           <svg
             className="rounded-md ml-1 mt-1 text-center"
             width="50px"
@@ -56,7 +56,7 @@ const MoreSkills = () => {
 
           <p className="mt-2 text-smm">C#</p>
         </span>
-        <span className="hover:text-orange-300 text-gray-300 fill-gray-300 hover:fill-orange-300 text-center">
+        <span className="hover:text-orange-300 text-gray-300 fill-gray-300 hover:fill-orange-300 text-center mr-3">
           <svg
             version="1.0"
             xmlns="http://www.w3.org/2000/svg"
@@ -119,7 +119,7 @@ const MoreSkills = () => {
           </svg>
           <p className="mt-2 text-smm">GO LANG</p>
         </span>
-        <span className="hover:text-orange-300 text-gray-300 fill-gray-300 hover:fill-orange-300 text-center">
+        <span className="hover:text-orange-300 text-gray-300 fill-gray-300 hover:fill-orange-300 text-center mr-3">
           <svg
             width="55px"
             height="55px"
@@ -140,16 +140,16 @@ const MoreSkills = () => {
       <h3 className="text-2xl border-b-2 pb-2 border-purple-500 w-14 whitespace-nowrap">
         Front-End Framework
       </h3>
-      <div className="flex mt-3 text-center flex-wrap space-x-5">
-        <span className="hover:text-orange-300 text-gray-300">
+      <div className="flex mt-3 text-center flex-wrap">
+        <span className="hover:text-orange-300 text-gray-300 mr-3">
           <FontAwesomeIcon size="3x" icon={["fab", "react"]} />
           <p className="mt-2 text-smm">REACT JS</p>
         </span>
-        <span className="hover:text-orange-200 text-gray-300">
+        <span className="hover:text-orange-200 text-gray-300 mr-3">
           <FontAwesomeIcon size="3x" icon={["fab", "vuejs"]} />
           <p className="mt-2 text-smm">VUE JS</p>
         </span>
-        <span className="hover:text-orange-300 text-gray-300 fill-gray-300 hover:fill-orange-300 text-center">
+        <span className="hover:text-orange-300 text-gray-300 fill-gray-300 hover:fill-orange-300 text-center mr-3">
           <svg
             width="55px"
             height="55px"
@@ -160,7 +160,7 @@ const MoreSkills = () => {
           </svg>
           <p className="mt-2 text-smm">NEXT JS</p>
         </span>
-        <span className="hover:text-orange-300 text-gray-300 fill-gray-300 hover:fill-orange-300 text-center">
+        <span className="hover:text-orange-300 text-gray-300 fill-gray-300 hover:fill-orange-300 text-center mr-3">
           <svg
             width="55px"
             height="55px"
@@ -172,7 +172,7 @@ const MoreSkills = () => {
 
           <p className="mt-2 text-smm">NUXT JS</p>
         </span>
-        <span className="hover:text-orange-300 text-gray-300 fill-gray-300 hover:fill-orange-300 text-center">
+        <span className="hover:text-orange-300 text-gray-300 fill-gray-300 hover:fill-orange-300 text-center mr-3">
           <svg
             width="55px"
             height="55px"
@@ -186,7 +186,7 @@ const MoreSkills = () => {
 
           <p className="mt-2 text-smm">JQUERY</p>
         </span>
-        <span className="hover:text-orange-300 text-gray-300 fill-gray-300 hover:fill-orange-300 text-center">
+        <span className="hover:text-orange-300 text-gray-300 fill-gray-300 hover:fill-orange-300 text-cente mr-3">
           <svg
             width="55px"
             height="55px"
@@ -200,7 +200,7 @@ const MoreSkills = () => {
 
           <p className="mt-2 text-smm">GATSBY</p>
         </span>
-        <span className="hover:text-orange-300 text-gray-300 fill-gray-300 hover:fill-orange-300">
+        <span className="hover:text-orange-300 text-gray-300 fill-gray-300 hover:fill-orange-300 mr-3">
           <svg
             version="1.0"
             xmlns="http://www.w3.org/2000/svg"
@@ -229,16 +229,16 @@ const MoreSkills = () => {
       <h3 className="text-2xl border-b-2 pb-2 border-purple-500 w-14 whitespace-nowrap">
         Back-End , Framework & API
       </h3>
-      <div className="flex mt-3 text-center flex-wrap space-x-5">
-        <span className="hover:text-orange-300 text-gray-300">
+      <div className="flex mt-3 text-center flex-wrap">
+        <span className="hover:text-orange-300 text-gray-300 mr-3">
           <FontAwesomeIcon size="3x" icon={["fab", "node"]} />
           <p className="mt-2 text-smm">NODE JS</p>
         </span>
-        <span className="hover:text-orange-300 text-gray-300">
+        <span className="hover:text-orange-300 text-gray-300 mr-3">
           <FontAwesomeIcon size="3x" icon={["fab", "laravel"]} />
           <p className="mt-2 text-smm">LARAVEL 6</p>
         </span>
-        <span className="hover:text-orange-300 text-gray-300 fill-gray-300 hover:fill-orange-300">
+        <span className="hover:text-orange-300 text-gray-300 fill-gray-300 hover:fill-orange-300 mr-3">
           <svg
             version="1.0"
             xmlns="http://www.w3.org/2000/svg"
@@ -257,7 +257,7 @@ const MoreSkills = () => {
           </svg>
           <p className="mt-2 text-smm">EXPRESS JS</p>
         </span>
-        <span className="hover:text-orange-300 text-gray-300 fill-gray-300 hover:fill-orange-300">
+        <span className="hover:text-orange-300 text-gray-300 fill-gray-300 hover:fill-orange-300 mr-3">
           <svg
             width="55px"
             height="55px"
@@ -270,7 +270,7 @@ const MoreSkills = () => {
           </svg>
           <p className="mt-2 text-smm">GRAPHQL</p>
         </span>
-        <span className="hover:text-orange-300 text-gray-300 fill-gray-300 hover:fill-orange-300">
+        <span className="hover:text-orange-300 text-gray-300 fill-gray-300 hover:fill-orange-300 mr-3">
           <svg
             version="1.0"
             xmlns="http://www.w3.org/2000/svg"
@@ -289,6 +289,65 @@ const MoreSkills = () => {
             </g>
           </svg>
           <p className="mt-2 text-smm">SOCKET</p>
+        </span>
+      </div>
+      <h3 className="text-2xl border-b-2 pb-2 border-purple-500 w-14 whitespace-nowrap">
+        Database & Cache
+      </h3>
+      <div className="flex mt-3 text-center flex-wrap">
+        <span className="hover:text-orange-300 text-gray-300 mr-3">
+          <FontAwesomeIcon size="3x" icon={["fas", "database"]} />
+          <p className="mt-2 text-smm">SQL DATABASE</p>
+        </span>
+        <span className="hover:text-orange-300 text-gray-300 fill-gray-300 hover:fill-orange-300 mr-3">
+          <svg
+            width="55px"
+            height="55px"
+            viewBox="0 0 24 24"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>MongoDB icon</title>
+            <path d="M17.18 9.518c-1.263-5.56-4.242-7.387-4.562-8.086C12.266.939 11.885 0 11.885 0c-.002.019-.004.031-.005.049v.013h-.001c-.002.015-.003.025-.004.039v.015h-.002c0 .01-.002.018-.002.026v.026h-.003c-.001.008-.001.018-.003.025v.021h-.002c0 .007 0 .015-.002.021v.02h-.002c0 .01-.001.022-.002.032v.002c-.003.017-.006.034-.009.05v.008h-.002c-.001.004-.003.008-.003.012v.017h-.003v.022h-.005v.018h-.005v.021h-.004v.019h-.004v.017h-.006v.014h-.004v.018h-.004v.014h-.005v.013H11.8v.015h-.004c-.001.001-.001.003-.001.004v.01h-.003c-.001.002-.001.004-.001.006v.006h-.002c-.001.003-.002.008-.002.01-.003.007-.007.014-.01.021v.002c-.002.002-.004.005-.005.007v.008h-.004v.008h-.005v.008h-.003v.01h-.006v.014h-.004v.004h-.004v.008h-.004v.011h-.004v.008h-.006v.011h-.004v.008h-.005v.008h-.003v.01h-.005v.008h-.004v.006h-.004v.008h-.006V.76h-.004v.006h-.005v.008h-.004v.011h-.005v.004h-.003v.008h-.006v.004h-.004v.01h-.004v.004h-.004v.008h-.005v.006h-.003l-.002.004v.004h-.002c-.001.002-.002.002-.002.004v.001h-.001c-.001.003-.002.005-.004.007v.003h-.001c-.005.006-.008.012-.012.018v.001c-.002.002-.007.006-.009.01v.002h-.001c-.001.001-.003.002-.003.003v.003h-.002l-.003.003v.001h-.001c0 .001-.002.002-.003.004v.004h-.003l-.002.002v.002h-.002c0 .002-.002.002-.002.003v.003h-.004c0 .001-.001.002-.002.003V.92h-.003v.004h-.004V.93h-.004v.008h-.005V.93h-.005v.004h-.004V.94h-.005v.008h-.005v.004h-.004v.006h-.004v.004h-.004V.97h-.006v.004h-.004V.98h-.005v.004h-.004v.005h-.005v.01h-.002v.004h-.006v.005h-.004v.002h-.004v.004h-.005v.01h-.004v.004h-.005v.004h-.004v.006h-.005v.004h-.005v.004h-.004v.004h-.004v.01h-.004v.005h-.006v.004h-.004v.004h-.005v.006h-.004v.004h-.005v.007h-.004v.004h-.006V1.1h-.002v.004h-.004v.004h-.005v.004h-.004v.006h-.005v.004h-.003c-.001.001-.001.002-.001.002v.002h-.002l-.004.004s-.002.002-.004.003v.006h-.004v.005h-.004v.004h-.004v.004h-.003l-.003.003v.003h-.002l-.002.002v.003h-.002c-.005.006-.007.01-.014.016-.002.002-.008.007-.012.01-.012.008-.027.021-.039.032-.008.005-.016.012-.022.017v.001h-.001c-.016.013-.031.025-.049.039v.001c-.024.02-.047.039-.074.062V1.34h-.002c-.057.047-.117.1-.186.159V1.5h-.001c-.169.148-.37.338-.595.568l-.015.015-.004.004C9 3.494 6.857 6.426 6.631 11.164c-.02.392-.016.773.006 1.144v.009c.109 1.867.695 3.461 1.428 4.756v.001c.292.516.607.985.926 1.405v.001c1.102 1.455 2.227 2.317 2.514 2.526.441 1.023.4 2.779.4 2.779l.644.215s-.131-1.701.053-2.522c.057-.257.192-.476.349-.662.106-.075.42-.301.797-.645.018-.019.028-.036.044-.054 1.521-1.418 4.362-4.91 3.388-10.599z" />
+          </svg>
+          <p className="mt-2 text-smm">MONGODB</p>
+        </span>
+        <span className="hover:text-orange-300 text-gray-300 mr-3">
+          <FontAwesomeIcon size="3x" icon={["fas", "fire"]} />
+          <p className="mt-2 text-smm">FIREBASE</p>
+        </span>
+        <span className="hover:text-orange-300 text-gray-300 fill-gray-300 hover:fill-orange-300 mr-3">
+          <svg
+            width="55px"
+            height="55px"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M31.99 19.12c-0.010 0.307-0.417 0.646-1.245 1.078-1.708 0.891-10.552 4.531-12.438 5.51-1.885 0.984-2.927 0.974-4.417 0.26-1.49-0.708-10.901-4.516-12.599-5.323-0.844-0.406-1.276-0.745-1.292-1.068v3.234c0 0.323 0.448 0.661 1.292 1.068 1.698 0.813 11.115 4.615 12.599 5.323 1.49 0.714 2.531 0.724 4.417-0.26 1.885-0.979 10.729-4.62 12.438-5.51 0.87-0.448 1.255-0.802 1.255-1.12 0-0.302 0-3.188 0-3.188 0-0.005-0.005-0.005-0.010-0.005zM31.99 13.849c-0.016 0.302-0.417 0.641-1.245 1.078-1.708 0.885-10.552 4.526-12.438 5.505-1.885 0.984-2.927 0.974-4.417 0.266-1.49-0.714-10.901-4.516-12.599-5.328-0.844-0.401-1.276-0.745-1.292-1.068v3.234c0 0.323 0.448 0.667 1.292 1.068 1.698 0.813 11.109 4.615 12.599 5.328 1.49 0.708 2.531 0.719 4.417-0.26 1.885-0.984 10.729-4.62 12.438-5.51 0.87-0.453 1.255-0.807 1.255-1.125 0-0.302 0-3.188 0-3.188s-0.005 0-0.010 0zM31.99 8.375c0.016-0.323-0.406-0.609-1.266-0.922-1.661-0.609-10.458-4.109-12.141-4.729-1.682-0.615-2.37-0.589-4.349 0.12-1.979 0.714-11.339 4.385-13.005 5.036-0.833 0.328-1.24 0.63-1.224 0.953v3.234c0 0.323 0.443 0.661 1.292 1.068 1.693 0.813 11.109 4.615 12.599 5.328 1.484 0.708 2.531 0.719 4.417-0.266 1.88-0.979 10.729-4.62 12.438-5.505 0.865-0.453 1.25-0.807 1.25-1.125 0-0.302 0-3.193 0-3.193zM11.458 11.438l7.417-1.135-2.24 3.281zM27.859 8.479l-4.859 1.922-4.385-1.734 4.854-1.917zM14.984 5.302l-0.719-1.323 2.24 0.875 2.109-0.688-0.573 1.365 2.151 0.807-2.771 0.286-0.625 1.495-1-1.667-3.203-0.286zM9.458 7.172c2.193 0 3.964 0.688 3.964 1.531 0 0.849-1.776 1.536-3.964 1.536s-3.964-0.688-3.964-1.536c0-0.844 1.776-1.531 3.964-1.531z" />
+          </svg>
+
+          <p className="mt-2 text-smm">REDIS</p>
+        </span>
+      </div>
+      <h3 className="text-2xl border-b-2 pb-2 border-purple-500 w-14 whitespace-nowrap">
+        Game
+      </h3>
+      <div className="flex mt-3 text-center flex-wrap">
+        <span className="hover:text-orange-300 text-gray-300  mr-3">
+          <FontAwesomeIcon size="3x" icon={["fab", "unity"]} />
+          <p className="mt-2 text-smm">UNITY</p>
+        </span>
+        <span className="hover:text-orange-300 text-gray-300 fill-gray-300 hover:fill-orange-300 mr-3">
+          <svg
+            width="55px"
+            height="55px"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M12.745 0.917c-1.458 0.328-2.906 0.781-4.266 1.464 0.031 1.198 0.109 2.344 0.266 3.505-0.526 0.339-1.078 0.63-1.568 1.026-0.5 0.38-1.010 0.75-1.464 1.198-0.906-0.594-1.859-1.156-2.849-1.651-1.063 1.141-2.052 2.375-2.865 3.755 0.609 0.99 1.25 1.911 1.938 2.792h0.016v8.474c0.016 0 0.031 0 0.047 0.005l5.198 0.5c0.271 0.026 0.484 0.245 0.5 0.521l0.161 2.292 4.531 0.323 0.313-2.115c0.042-0.276 0.276-0.479 0.552-0.479h5.484c0.276 0 0.51 0.203 0.552 0.479l0.313 2.115 4.531-0.323 0.161-2.292c0.016-0.276 0.229-0.495 0.505-0.521l5.193-0.5c0.016 0 0.031-0.005 0.047-0.005v-8.474h0.021c0.688-0.875 1.323-1.802 1.932-2.792-0.807-1.38-1.802-2.615-2.865-3.755-0.984 0.495-1.943 1.057-2.849 1.651-0.453-0.448-0.958-0.818-1.458-1.198-0.495-0.396-1.047-0.688-1.573-1.026 0.156-1.161 0.234-2.307 0.266-3.505-1.354-0.682-2.802-1.135-4.266-1.464-0.583 0.984-1.115 2.047-1.578 3.083-0.552-0.089-1.109-0.125-1.661-0.13h-0.026c-0.552 0.005-1.109 0.042-1.661 0.13-0.464-1.036-0.995-2.099-1.583-3.083zM8.635 13.323c1.729 0 3.13 1.406 3.13 3.135s-1.401 3.13-3.13 3.13c-1.729 0-3.13-1.401-3.13-3.13s1.401-3.135 3.13-3.135zM23.365 13.323c1.729 0 3.13 1.406 3.13 3.135s-1.401 3.13-3.13 3.13c-1.729 0-3.13-1.401-3.13-3.13s1.401-3.135 3.13-3.135zM8.932 14.568c-1.146 0-2.078 0.927-2.078 2.078 0 1.146 0.932 2.073 2.078 2.073 1.151 0 2.083-0.927 2.083-2.073 0-1.151-0.932-2.078-2.083-2.078zM23.063 14.568c-1.146 0-2.078 0.927-2.078 2.078 0 1.146 0.932 2.073 2.078 2.073 1.151 0 2.078-0.927 2.078-2.073 0-1.151-0.927-2.078-2.078-2.078zM16 15.172c0.557 0 1.010 0.406 1.010 0.911v2.885c0 0.505-0.453 0.917-1.010 0.917s-1.010-0.411-1.010-0.917v-2.885c0-0.505 0.453-0.911 1.010-0.911zM1.948 22.599c0 0.505 0.005 1.052 0.005 1.161 0 4.938 6.26 7.307 14.036 7.333h0.021c7.776-0.026 14.031-2.396 14.031-7.333 0-0.109 0.005-0.656 0.010-1.161l-4.672 0.453-0.161 2.307c-0.021 0.276-0.24 0.5-0.516 0.516l-5.578 0.396c-0.271 0-0.51-0.198-0.552-0.474l-0.318-2.156h-4.516l-0.318 2.156c-0.042 0.286-0.297 0.495-0.594 0.474l-5.531-0.396c-0.276-0.021-0.5-0.24-0.521-0.516l-0.156-2.307-4.672-0.448z" />
+          </svg>
+
+          <p className="mt-2 text-smm">REDIS</p>
         </span>
       </div>
     </div>
