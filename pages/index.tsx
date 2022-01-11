@@ -122,12 +122,20 @@ export default function Home() {
                     onClick={() => setShowMore(!showMore)}
                     className="bg-orange-600 px-5 py-2 rounded-lg focus:outline outline-offset-1 outline-orange-900"
                   >
-                    <FontAwesomeIcon
+                {showMore ? <FontAwesomeIcon
                       className="mr-2 down-animation"
                       size="lg"
                       icon={["fas", "arrow-down"]}
-                    />{" "}
-                    Show more
+                    /> : <FontAwesomeIcon
+                    className="mr-2 down-animation"
+                    size="lg"
+                    icon={["fas", "arrow-up"]}
+                  />}
+
+                    {" "}
+                    
+                {showMore ? 'Show more' : 'Show less'}
+
                   </button>
                 </div>
               </div>
