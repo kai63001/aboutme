@@ -4,14 +4,13 @@ import Head from 'next/head';
 const Layout = (props: any) => {
   return (
     <>
-      
-      <main className="parallax">
       <Header
         title={props.title}
         des={props.des}
         can={props.can}
         image={props.image}
       />
+      <main className="parallax">
         {props.children}
       </main>
       {/* <Footer /> */}
