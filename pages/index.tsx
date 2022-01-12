@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
-import styles from "../styles/Home.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
@@ -74,10 +73,10 @@ export default function Home() {
         <div className="parallax_cover z-100 overflow-x-visible">
           <nav
             id="navbar"
-            className="psitck text-white bg-main pb-6 pt-4 z-100"
+            className="psitck text-white bg-main pb-6 pt-1 z-100"
           >
             <div className="max-w-screen-xl mx-auto mt-3 px-2 xs:px-0 flex justify-between">
-              <h2 onClick={() => console.log("")}>HELLO</h2>
+              <h2 className="rounded-md px-4 py-2" onClick={() => console.log("")}>HELLO</h2>
               <ul className="flex space-x-5">
                 <li>
                   <button
@@ -126,6 +125,7 @@ export default function Home() {
                 applications and games with other cool libraries and frameworks.
               </p>
             </div>
+            <br />
             <div
               ref={skills}
               id="skills"

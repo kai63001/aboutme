@@ -7,6 +7,11 @@ const MoreSkills = () => {
   library.add(fab, fas);
   return (
     <div className="mt-3">
+      <div id="exp">
+        <div><span className="px-3 bg-orange-100 rounded-md mr-3"></span> Beginner</div>
+        <div><span className="px-3 bg-orange-300 rounded-md mr-3"></span>  Experienced</div>
+        <div><span className="px-3 bg-orange-500 rounded-md mr-3"></span>  Skillfull</div>
+      </div>
       <h3 className="text-2xl border-b-2 pb-2 border-purple-500 w-14 whitespace-nowrap">
         Programming Languages
       </h3>
@@ -56,7 +61,7 @@ const MoreSkills = () => {
 
           <p className="mt-2 text-smm">C#</p>
         </span>
-        <span className="hover:text-orange-300 text-gray-300 fill-gray-300 hover:fill-orange-300 text-center mr-3">
+        <span className="hover:text-orange-100 text-gray-300 fill-gray-300 hover:fill-orange-100 text-center mr-3">
           <svg
             version="1.0"
             xmlns="http://www.w3.org/2000/svg"
@@ -149,7 +154,7 @@ const MoreSkills = () => {
           <FontAwesomeIcon size="3x" icon={["fab", "vuejs"]} />
           <p className="mt-2 text-smm">VUE JS</p>
         </span>
-        <span className="hover:text-orange-300 text-gray-300 fill-gray-300 hover:fill-orange-300 text-center mr-3">
+        <span className="hover:text-orange-500 text-gray-300 fill-gray-300 hover:fill-orange-500 text-center mr-3">
           <svg
             width="55px"
             height="55px"
@@ -186,7 +191,7 @@ const MoreSkills = () => {
 
           <p className="mt-2 text-smm">JQUERY</p>
         </span>
-        <span className="hover:text-orange-300 text-gray-300 fill-gray-300 hover:fill-orange-300 text-cente mr-3">
+        <span className="hover:text-orange-100 text-gray-300 fill-gray-300 hover:fill-orange-100 text-cente mr-3">
           <svg
             width="55px"
             height="55px"
@@ -257,7 +262,7 @@ const MoreSkills = () => {
           </svg>
           <p className="mt-2 text-smm">EXPRESS JS</p>
         </span>
-        <span className="hover:text-orange-300 text-gray-300 fill-gray-300 hover:fill-orange-300 mr-3">
+        <span className="hover:text-orange-100 text-gray-300 fill-gray-300 hover:fill-orange-100 mr-3">
           <svg
             width="55px"
             height="55px"
@@ -374,7 +379,7 @@ const MoreSkills = () => {
           <FontAwesomeIcon size="3x" icon={["fab", "unity"]} />
           <p className="mt-2 text-smm">UNITY</p>
         </span>
-        <span className="hover:text-orange-300 text-gray-300 fill-gray-300 hover:fill-orange-300 mr-3">
+        <span className="hover:text-orange-100 text-gray-300 fill-gray-300 hover:fill-orange-100 mr-3">
           <svg
             width="55px"
             height="55px"
@@ -541,13 +546,13 @@ const MoreSkills = () => {
       </h3>
       <div className="flex mt-3 text-center flex-wrap space-y-3">
         <span></span>
-        <button className="bg-gray-300 text-main rounded-md px-3 hover:bg-orange-300 mr-3">
+        <button className="bg-gray-300 text-main rounded-md px-3 hover:bg-orange-500 mr-3">
           HTML
         </button>
-        <button className="bg-gray-300 text-main rounded-md px-3 hover:bg-orange-300 mr-3">
+        <button className="bg-gray-300 text-main rounded-md px-3 hover:bg-orange-500 mr-3">
           CSS
         </button>
-        <button className="bg-gray-300 text-main rounded-md px-3 hover:bg-orange-300 mr-3">
+        <button className="bg-gray-300 text-main rounded-md px-3 hover:bg-orange-500 mr-3">
           SASS
         </button>
         <button className="bg-gray-300 text-main rounded-md px-3 hover:bg-orange-300 mr-3">
