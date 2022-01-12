@@ -33,7 +33,7 @@ const Header = (props:any) => {
           },
         ],
         url: `https://kai63001.github.io${router.asPath}`,
-        site_name: "wallss",
+        site_name: "Supanat Portfolio",
       }}
       twitter={{
         handle: "@kai63001",
