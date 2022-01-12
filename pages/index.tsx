@@ -44,9 +44,6 @@ export default function Home() {
 
   return (
     <Layout>
-      <Head>
-        <title>Supanat Konprom</title>
-      </Head>
         <div className="parallax_layer parallax_layer_4 text-center mt-40">
           <h1 className="text-7xl font-mochiy">
             Hy! I am Supanat{" "}

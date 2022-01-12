@@ -12,7 +12,7 @@ const Header = (props:any) => {
       description={
         props.des
           ? props.des
-          : "Moonsblog post it"
+          : "Hi, I’m Supanat Konprom. Nice to meet you. Student Software Engineer Experience building web, mobile applications and games with other cool libraries and frameworks."
       }
       canonical={`https://kai63001.github.io${router.asPath}`}
       openGraph={{
@@ -23,7 +23,7 @@ const Header = (props:any) => {
           : "Supanat Konprom",
         description: props.des
           ? props.des
-          : "Moonsblog post it",
+          : "Hi, I’m Supanat Konprom. Nice to meet you. Student Software Engineer Experience building web, mobile applications and games with other cool libraries and frameworks.",
         images: [
           {
             url:
@@ -36,8 +36,8 @@ const Header = (props:any) => {
         site_name: "wallss",
       }}
       twitter={{
-        handle: "@moonsblog",
-        site: "@moonsblog",
+        handle: "@kai63001",
+        site: "@kai63001",
         cardType: "summary_large_image",
       }}
     />
