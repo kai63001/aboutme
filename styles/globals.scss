@@ -22,14 +22,8 @@ body {
     perspective: 100px;
     height: 100vh;
     width: auto;
-    overflow-x: hidden;
+    // overflow-x: auto;
     overflow-y: auto;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    right: 0;
-    bottom: 0;
-    margin-left: -50%;
 }
 
 .parallax_layer {

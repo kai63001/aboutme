@@ -7,6 +7,8 @@ import { fas } from "@fortawesome/free-solid-svg-icons";
 import LessSkills from "@/components/skils/less";
 import useOnScreen from "@/lib/useOnScreen";
 import MoreSkills from "@/components/skils/more";
+import Layout from "@/components/Layout";
+import Head from "next/head";
 
 export default function Home() {
   //* set show more skills
@@ -41,8 +43,10 @@ export default function Home() {
   library.add(fab, fas);
 
   return (
-    <div>
-      <div className="parallax">
+    <Layout>
+      <Head>
+        <title>Supanat Konprom</title>
+      </Head>
         <div className="parallax_layer parallax_layer_4 text-center mt-40">
           <h1 className="text-7xl font-mochiy">
             Hy! I am Supanat{" "}
@@ -173,7 +177,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      </Layout>
   );
 }
