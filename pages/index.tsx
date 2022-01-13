@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -8,7 +7,6 @@ import LessSkills from "@/components/skils/less";
 import useOnScreen from "@/lib/useOnScreen";
 import MoreSkills from "@/components/skils/more";
 import Layout from "@/components/Layout";
-import Head from "next/head";
 
 export default function Home() {
   //* set show more skills
