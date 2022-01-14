@@ -10,6 +10,7 @@ module.exports = {
   }),
   images: {
     loader: 'imgix',
+    domains: ['www.xda-developers.com'],
   },
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')],
