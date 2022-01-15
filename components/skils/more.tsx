@@ -16,7 +16,7 @@ const MoreSkills = () => {
           Experienced
         </div>
         <div>
-          <span className="px-3 bg-orange-500 rounded-md mr-3"></span> Skillfull
+          <span className="px-3 bg-orange-500 rounded-md mr-3"></span> Skillfully
         </div>
       </div>
       <h3 className="text-2xl border-b-2 pb-2 border-purple-500 w-14 whitespace-nowrap">
@@ -540,7 +540,7 @@ const MoreSkills = () => {
         <button className="bg-gray-300 text-main rounded-md px-3 hover:bg-orange-500 mr-3">
           SASS
         </button>
-        <button className="bg-gray-300 text-main rounded-md px-3 hover:bg-orange-300 mr-3">
+        <button className="bg-gray-300 text-main rounded-md px-3 hover:bg-orange-500 mr-3">
           Tailwind
         </button>
         <button className="bg-gray-300 text-main rounded-md px-3 hover:bg-orange-300 mr-3">
@@ -549,7 +549,7 @@ const MoreSkills = () => {
         <button className="bg-gray-300 text-main rounded-md px-3 hover:bg-orange-300 mr-3">
           SEO
         </button>
-        <button className="bg-gray-300 text-main rounded-md px-3 hover:bg-orange-300 mr-3">
+        <button className="bg-gray-300 text-main rounded-md px-3 hover:bg-orange-100 mr-3">
           Web 3
         </button>
         <button className="bg-gray-300 text-main rounded-md px-3 hover:bg-orange-300 mr-3">
@@ -561,15 +561,17 @@ const MoreSkills = () => {
         <button className="bg-gray-300 text-main rounded-md px-3 hover:bg-orange-300 mr-3">
           Nginx api gateway
         </button>
+        <button className="bg-gray-300 text-main rounded-md px-3 hover:bg-orange-500 mr-3">Vim</button>
         <button className="bg-gray-300 text-main rounded-md px-3 hover:bg-orange-300 mr-3">
           Microservices concept
         </button>
-        <button className="bg-gray-300 text-main rounded-md px-3 hover:bg-orange-300 mr-3">
+        <button className="bg-gray-300 text-main rounded-md px-3 hover:bg-orange-100 mr-3">
           Message broker concept
         </button>
         <button className="bg-gray-300 text-main rounded-md px-3 hover:bg-orange-300 mr-3">
           Digital Ocean
         </button>
+        <button className="bg-gray-300 text-main rounded-md px-3 hover:bg-orange-500 mr-3">Linux</button>
       </div>
     </div>
   );
