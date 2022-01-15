@@ -181,7 +181,7 @@ export default function Home() {
                 <p className="text-sm">Simple project on google play store</p>
               </Close>
               <Close
-                link="/"
+                link="https://chrome.google.com/webstore/detail/restore-youtube-dislikes/joiiagfkaacgdjdaenodonjbpmbhpckg?hl=th"
                 image="https://www.caveconsulting.com/wp-content/uploads/2018/02/chrome-extension.png"
               >
                 <h3>Chrome Extension</h3>
