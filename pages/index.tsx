@@ -174,7 +174,7 @@ export default function Home() {
             </h2>
             <div className="grid sm:grid-cols-3 grid-cols-1 gap-4 mt-4">
               <Close
-                link="/"
+                link="https://play.google.com/store/apps/developer?id=Laybiks"
                 image="https://www.xda-developers.com/files/2019/09/play-store-dark-mode.jpg"
               >
                 <h3>Google Play Store</h3>
