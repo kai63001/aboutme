@@ -36,7 +36,7 @@ const OpenSource = (props: OpenInt) => {
 
   return (
     <Link href={props.link}>
-      <a target="_blank" className="bg-gray-900 rounded-md overflow-hidden">
+      <a target="_blank" className="bg-gray-900 rounded-md overflow-hidden hover:bg-gray-800 duration-300">
         <div className="mx-auto w-3/4 flex flex-col justify-between h-64">
           <div className="h3 mt-5">
             <FontAwesomeIcon
