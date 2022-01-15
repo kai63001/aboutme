@@ -5,7 +5,7 @@ const Close = (props: any) => {
     <Link href={props.link}>
       <a
         target={"_blank"}
-        className="bg-purple-600 rounded-md overflow-hidden group relative"
+        className="bg-purple-600 rounded-md overflow-hidden group relative h-64"
       >
         <img
           src={props.image}

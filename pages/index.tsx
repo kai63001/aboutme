@@ -7,13 +7,15 @@ import LessSkills from "@/components/skils/less";
 import useOnScreen from "@/lib/useOnScreen";
 import MoreSkills from "@/components/skils/more";
 import Layout from "@/components/Layout";
-import Image from "next/image";
 import Link from "next/link";
 import Close from "@/components/project/close";
+import OpenSource from "@/components/project/open";
+import dataTest from "@/lib/project/openSource.json";
 
 export default function Home() {
   //* set show more skills
   const [showMore, setShowMore] = useState(true);
+
   const setShowLessSkill = () => {
     if (showMore == true) {
       setShowMore(false);
@@ -75,10 +77,7 @@ export default function Home() {
       <div className="parallax_cover z-100 overflow-x-visible">
         <nav id="navbar" className="psitck text-white bg-main pb-6 pt-1 z-100">
           <div className="max-w-screen-xl mx-auto mt-3 px-2 xs:px-0 flex justify-between">
-            <h2
-              className="rounded-md px-4 py-2"
-              onClick={() => console.log("")}
-            >
+            <h2 className="rounded-md py-2" onClick={() => console.log("")}>
               HELLO
             </h2>
             <ul className="flex space-x-5">
@@ -173,7 +172,7 @@ export default function Home() {
             <h2 className="text-2xl mt-5 border-b-2 pb-2 border-purple-500 w-14 whitespace-nowrap">
               Closed Source
             </h2>
-            <div className="grid grid-cols-3 gap-4 mt-4">
+            <div className="grid sm:grid-cols-3 grid-cols-1 gap-4 mt-4">
               <Close
                 link="/"
                 image="https://www.xda-developers.com/files/2019/09/play-store-dark-mode.jpg"
@@ -190,11 +189,15 @@ export default function Home() {
                   Simple project on chrome extension for learning
                 </p>
               </Close>
-              <div className="bg-gray-900 rounded-md overflow-hidden flex cursor-pointer group">
+              <div className="bg-gray-900 rounded-md overflow-hidden flex cursor-pointer group h-64">
                 <div className="m-auto text-center">
                   <div className="group-hover:top-0 text-2xl">Others</div>
                   <div className="group-hover:h-9 h-0 duration-500 overflow-hidden">
-                    asdasdaasdasdasdasdasdas
+                    <FontAwesomeIcon
+                      className="mr-2"
+                      size="lg"
+                      icon={["fas", "arrow-up"]}
+                    />
                   </div>
                 </div>
               </div>
@@ -202,7 +205,18 @@ export default function Home() {
             <h2 className="text-2xl mt-5 border-b-2 pb-2 border-purple-500 w-14 whitespace-nowrap">
               Open Source
             </h2>
-            
+            <div className="grid sm:grid-cols-3 grid-cols-1 gap-4 mt-4">
+              {dataTest.map((data: any, i: any) => (
+                <OpenSource
+                  key={i}
+                  color={data.color}
+                  detail={data.detail}
+                  name={data.name}
+                  lang={data.lang}
+                  link={data.link}
+                />
+              ))}
+            </div>
           </div>
         </div>
       </div>
