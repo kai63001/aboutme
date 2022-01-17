@@ -47,7 +47,7 @@ const MoreSkills = () => {
         </span>
         <span className="hover:text-orange-300 text-gray-300 mr-3">
           <FontAwesomeIcon size="3x" icon={["fab", "php"]} />
-          <p className="mt-2 text-smm">PHP</p>
+          <p className="mt-2 text-smm">PHP7</p>
         </span>
         <span className="hover:text-orange-300 text-gray-300 mr-3">
           <FontAwesomeIcon size="3x" icon={["fab", "java"]} />

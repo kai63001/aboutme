@@ -218,7 +218,7 @@ export default function Home() {
               ))}
             </div>
             <div className="text-center mt-6">
-              <Link href="https://github.com/kai63001">
+              <Link href="https://github.com/kai63001?tab=repositories">
                 <a
                   target={"_blank"}
                   className="bg-purple-600 px-5 py-3 rounded-lg focus:outline outline-offset-1 outline-purple-900"
