@@ -11,6 +11,7 @@ import Link from "next/link";
 import Close from "@/components/project/close";
 import OpenSource from "@/components/project/open";
 import dataTest from "@/lib/project/openSource.json";
+import Contact from "@/components/contact/Contact";
 
 export default function Home() {
   //* set show more skills
@@ -145,15 +146,15 @@ export default function Home() {
               <svg fill="currentColor" viewBox="0 0 20 20" className="w-8 h-8">
                 <path
                   visibility={open ? "hidden" : "visible"}
-                  fill-rule="evenodd"
+                  fillRule="evenodd"
                   d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
-                  clip-rule="evenodd"
+                  clipRule="evenodd"
                 ></path>
                 <path
                   visibility={!open ? "hidden" : "visible"}
-                  fill-rule="evenodd"
+                  fillRule="evenodd"
                   d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                  clip-rule="evenodd"
+                  clipRule="evenodd"
                 ></path>
               </svg>
             </button>
@@ -319,41 +320,7 @@ export default function Home() {
             <h2 className="text-3xl mt-5 border-b-2 pb-2 border-purple-500 w-14 whitespace-nowrap">
               Contact
             </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-5">
-              <div className="">
-                <form>
-                  <div className="mb-6">
-                    <input
-                      type="text"
-                      className="px-3 py-2 rounded-md w-full bg-gray-900 border-2 border-purple-900"
-                      placeholder="Full name*"
-                    />
-                  </div>
-                  <div className="mb-6">
-                    <input
-                      type="email"
-                      className="px-3 py-2 rounded-md w-full bg-gray-900 border-2 border-purple-900"
-                      placeholder="Email*"
-                    />
-                  </div>
-                  <div className="mb-6">
-                    <textarea
-                      cols={30}
-                      rows={7}
-                      className="px-3 py-2 rounded-md w-full bg-gray-900 border-2 border-purple-900"
-                      placeholder="Email*"
-                    ></textarea>
-                    {/* <textarea name="" id="" cols="30" rows="10"></textarea> */}
-                  </div>
-                  <div className="">
-                    <button type="submit" className="bg-purple-900 px-10 py-2 rounded-md">Submit</button>
-                  </div>
-                </form>
-              </div>
-              <div className=" h-full">
-                <img src="./contact.png" className="sm:-mt-10" height="100%" width="100%" alt="" />
-              </div>
-            </div>
+            <Contact />
           </div>
         </div>
       </div>
