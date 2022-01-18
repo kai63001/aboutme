@@ -15,6 +15,7 @@ import dataTest from "@/lib/project/openSource.json";
 export default function Home() {
   //* set show more skills
   const [showMore, setShowMore] = useState(true);
+  const [open, setOpen] = useState(false);
 
   const setShowLessSkill = () => {
     if (showMore == true) {
@@ -75,12 +76,12 @@ export default function Home() {
         <img className="img" src="/images/layer1.png" />
       </div>
       <div className="parallax_cover z-100 overflow-x-visible">
-        <nav id="navbar" className="psitck text-white bg-main pb-6 pt-1 z-100">
-          <div className="max-w-screen-xl mx-auto mt-3 px-2 xs:px-0 flex justify-between">
+        <nav id="navbar" className="psitck text-white bg-main pb-1 sm:pb-3 sm:pt-3 pt-1 z-100">
+          <div className="max-w-screen-xl mx-auto px-2 xs:px-0 flex justify-between">
             <h2 className="rounded-md py-2" onClick={() => console.log("")}>
               HELLO
             </h2>
-            <ul className="flex space-x-5">
+            <ul className="hidden sm:flex space-x-5">
               <li>
                 <button
                   className={`hover:bg-purple-800 ${
@@ -115,7 +116,60 @@ export default function Home() {
                 </button>
               </li>
             </ul>
+            <button className="md:hidden rounded-lg focus:outline-none focus:shadow-outline" onClick={()=>setOpen(!open)}>
+              <svg fill="currentColor" viewBox="0 0 20 20" className="w-8 h-8">
+                <path
+                  visibility={open ? 'hidden':'visible'}
+                  fill-rule="evenodd"
+                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+                  clip-rule="evenodd"
+                ></path>
+                <path
+                 visibility={!open ? 'hidden':'visible'}
+                  fill-rule="evenodd"
+                  d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
           </div>
+          <div className={`${open ? 'h-40' : 'h-0'} overflow-hidden flex flex-col flex-grow md:pb-0 md:flex md:justify-end md:flex-row bg-main px-3 duration-300`}>
+     <ul className="space-y-2 w-full">
+              <li>
+                <button
+                  className={`hover:bg-purple-800 ${
+                    aboutisVisible && "bg-purple-800"
+                  } rounded-md px-4 py-2 w-full`}
+                  onClick={aboutScroll}
+                >
+                  About
+                </button>
+              </li>
+              <li>
+                <button
+                  className={`hover:bg-purple-800 ${
+                    !aboutisVisible && skillisVisible && "bg-purple-800"
+                  } rounded-md px-4 py-2 w-full`}
+                  onClick={skillsScroll}
+                >
+                  Skills
+                </button>
+              </li>
+              <li>
+                <button
+                  className={`hover:bg-purple-800 ${
+                    !aboutisVisible &&
+                    !skillisVisible &&
+                    projectisVisible &&
+                    "bg-purple-800"
+                  } rounded-md px-4 py-2 w-full`}
+                  onClick={projectScroll}
+                >
+                  Project
+                </button>
+              </li>
+            </ul>
+    </div>
         </nav>
         <br />
         <div className="max-w-screen-xl mx-auto mt-3 px-2 xs:px-0 text-white text-lg">
