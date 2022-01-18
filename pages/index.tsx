@@ -44,6 +44,11 @@ export default function Home() {
     project?.current?.scrollIntoView({ behavior: "smooth", block: "start" });
   const projectisVisible = useOnScreen(project);
 
+  //? contact
+  const contact: any = useRef(null);
+  const contactScroll: any = () =>
+    contact?.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+  const contactisVisible = useOnScreen(contact);
   library.add(fab, fas);
 
   return (
@@ -76,7 +81,10 @@ export default function Home() {
         <img className="img" src="/images/layer1.png" />
       </div>
       <div className="parallax_cover z-100 overflow-x-visible">
-        <nav id="navbar" className="psitck text-white bg-main pb-1 sm:pb-3 sm:pt-3 pt-1 z-100">
+        <nav
+          id="navbar"
+          className="psitck text-white bg-main pb-1 sm:pb-3 sm:pt-3 pt-1 z-100"
+        >
           <div className="max-w-screen-xl mx-auto px-2 xs:px-0 flex justify-between">
             <h2 className="rounded-md py-2" onClick={() => console.log("")}>
               HELLO
@@ -115,17 +123,34 @@ export default function Home() {
                   Project
                 </button>
               </li>
+              <li>
+                <button
+                  className={`hover:bg-purple-800 ${
+                    !aboutisVisible &&
+                    !skillisVisible &&
+                    !projectisVisible &&
+                    contactisVisible &&
+                    "bg-purple-800"
+                  } rounded-md px-4 py-2`}
+                  onClick={contactScroll}
+                >
+                  Contact
+                </button>
+              </li>
             </ul>
-            <button className="md:hidden rounded-lg focus:outline-none focus:shadow-outline" onClick={()=>setOpen(!open)}>
+            <button
+              className="md:hidden rounded-lg focus:outline-none focus:shadow-outline"
+              onClick={() => setOpen(!open)}
+            >
               <svg fill="currentColor" viewBox="0 0 20 20" className="w-8 h-8">
                 <path
-                  visibility={open ? 'hidden':'visible'}
+                  visibility={open ? "hidden" : "visible"}
                   fill-rule="evenodd"
                   d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
                   clip-rule="evenodd"
                 ></path>
                 <path
-                 visibility={!open ? 'hidden':'visible'}
+                  visibility={!open ? "hidden" : "visible"}
                   fill-rule="evenodd"
                   d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
                   clip-rule="evenodd"
@@ -133,8 +158,12 @@ export default function Home() {
               </svg>
             </button>
           </div>
-          <div className={`${open ? 'h-40' : 'h-0'} overflow-hidden flex flex-col flex-grow md:pb-0 md:flex md:justify-end md:flex-row bg-main px-3 duration-300`}>
-     <ul className="space-y-2 w-full">
+          <div
+            className={`${
+              open ? "h-40" : "h-0"
+            } overflow-hidden flex flex-col flex-grow md:pb-0 md:flex md:justify-end md:flex-row bg-main px-3 duration-300`}
+          >
+            <ul className="space-y-2 w-full">
               <li>
                 <button
                   className={`hover:bg-purple-800 ${
@@ -169,7 +198,7 @@ export default function Home() {
                 </button>
               </li>
             </ul>
-    </div>
+          </div>
         </nav>
         <br />
         <div className="max-w-screen-xl mx-auto mt-3 px-2 xs:px-0 text-white text-lg">
@@ -223,9 +252,9 @@ export default function Home() {
           <br />
           <div ref={project} id="project">
             <h2 className="text-3xl">Project</h2>
-            <h2 className="text-2xl mt-5 border-b-2 pb-2 border-purple-500 w-14 whitespace-nowrap">
+            <h3 className="text-2xl mt-5 border-b-2 pb-2 border-purple-500 w-14 whitespace-nowrap">
               Closed Source
-            </h2>
+            </h3>
             <div className="grid sm:grid-cols-3 grid-cols-1 gap-4 mt-4">
               <Close
                 link="https://play.google.com/store/apps/developer?id=Laybiks"
@@ -281,6 +310,16 @@ export default function Home() {
                 </a>
               </Link>
             </div>
+          </div>
+          <br />
+          <br />
+          <br />
+          <br />
+          <div  ref={contact} id="contact">
+            <h2 className="text-3xl mt-5 border-b-2 pb-2 border-purple-500 w-14 whitespace-nowrap">
+              Contact
+            </h2>
+            <div className=""></div>
           </div>
         </div>
       </div>
