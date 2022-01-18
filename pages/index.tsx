@@ -12,6 +12,7 @@ import Close from "@/components/project/close";
 import OpenSource from "@/components/project/open";
 import dataTest from "@/lib/project/openSource.json";
 import Contact from "@/components/contact/Contact";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   //* set show more skills
@@ -56,7 +57,7 @@ export default function Home() {
     <Layout>
       <div className="parallax_layer parallax_layer_4 text-center mt-40">
         <h1 className="text-7xl font-mochiy">
-          Hy! I am Supanat{" "}
+          Hi! I am Supanat{" "}
           <span className="wave-emoji">
             <img
               alt="👋"
@@ -161,7 +162,7 @@ export default function Home() {
           </div>
           <div
             className={`${
-              open ? "h-40" : "h-0"
+              open ? "h-56" : "h-0"
             } overflow-hidden flex flex-col flex-grow md:pb-0 md:flex md:justify-end md:flex-row bg-main px-3 duration-300`}
           >
             <ul className="space-y-2 w-full">
@@ -196,6 +197,20 @@ export default function Home() {
                   onClick={projectScroll}
                 >
                   Project
+                </button>
+              </li>
+              <li>
+                <button
+                  className={`hover:bg-purple-800 ${
+                    !aboutisVisible &&
+                    !skillisVisible &&
+                    !projectisVisible &&
+                    contactisVisible &&
+                    "bg-purple-800"
+                  } rounded-md px-4 py-2 w-full`}
+                  onClick={contactScroll}
+                >
+                  Contact
                 </button>
               </li>
             </ul>
@@ -323,6 +338,8 @@ export default function Home() {
             <Contact />
           </div>
         </div>
+        <br /><br /><br /><br /><br />
+        <Footer/>
       </div>
     </Layout>
   );
