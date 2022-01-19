@@ -288,15 +288,31 @@ export default function Home() {
                   Simple project on chrome extension for learning
                 </p>
               </Close>
-              <div className="bg-gray-900 rounded-md overflow-hidden flex cursor-pointer group h-64">
+              <div className="bg-gray-900 rounded-md overflow-hidden flex group h-64">
                 <div className="m-auto text-center">
                   <div className="group-hover:top-0 text-2xl">Others</div>
-                  <div className="group-hover:h-9 h-0 duration-500 overflow-hidden">
-                    <FontAwesomeIcon
-                      className="mr-2"
-                      size="lg"
-                      icon={["fas", "arrow-up"]}
-                    />
+                  <div className="group-hover:h-48 h-0 duration-500 overflow-hidden mt-5">
+                    <div className="mb-2">
+                      <Link href="https://wallss.net">
+                        <a target="_blank" className="border-2 rounded-md px-3 mt-7 hover:bg-white hover:text-black duration-200">
+                          Wallss.net
+                        </a>
+                      </Link>
+                    </div>
+                    <div className="mb-2">
+                      <Link href="https://loadmp.com">
+                        <a target="_blank" className="border-2 rounded-md px-3 mt-7 hover:bg-white hover:text-black duration-200">
+                          Loadmp.com
+                        </a>
+                      </Link>
+                    </div>
+                    <div className="mb-2">
+                      <Link href="https://www.youtube.com/watch?v=cXt49bKnEXY">
+                        <a target="_blank" className="border-2 rounded-md px-3 mt-7 hover:bg-white hover:text-black duration-200">
+                          Movie Script
+                        </a>
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -338,8 +354,12 @@ export default function Home() {
             <Contact />
           </div>
         </div>
-        <br /><br /><br /><br /><br />
-        <Footer/>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <Footer />
       </div>
     </Layout>
   );
