@@ -572,6 +572,9 @@ const MoreSkills = () => {
           Digital Ocean
         </button>
         <button className="bg-gray-300 text-main rounded-md px-3 hover:bg-orange-500 mr-3">Linux</button>
+        <button className="bg-gray-300 text-main rounded-md px-3 hover:bg-orange-300 mr-3">Burp Suit</button>
+        <button className="bg-gray-300 text-main rounded-md px-3 hover:bg-orange-300 mr-3">Metasploit</button>
+        <button className="bg-gray-300 text-main rounded-md px-3 hover:bg-orange-300 mr-3">Nmap</button>
       </div>
     </div>
   );
