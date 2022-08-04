@@ -17,7 +17,7 @@ const Footer = () => {
           </p>
         </div>
         <div className="bg-main2 bg-opacity-0 flex">
-          <div className="my-auto space-x-4">
+          <div className="my-auto space-x-4 flex">
             <Link href={"https://github.com/kai63001"}>
               <a target="_blank">
                 <FontAwesomeIcon className="outline rounded-full p-1" size="2x" icon={["fab", "github"]} />
@@ -30,7 +30,12 @@ const Footer = () => {
             </Link>
             <Link href={"tel:+66936652528"}>
               <a target="_blank">
-                <FontAwesomeIcon className="outline rounded-full p-1" size="2x" icon={["fas", "phone"]} />
+                <FontAwesomeIcon className="outline rounded-full p-1 " size="2x" icon={["fas", "phone"]} />
+              </a>
+            </Link>
+            <Link href={"https://hackerone.com/romeo1?type=user"}>
+              <a target="_blank" className="block mt-1">
+                <span className="border-4  rounded-full px-3 py-2 hover:bg-gray-200 hover:text-black duration-200">HACKER ONE</span>
               </a>
             </Link>
           </div>

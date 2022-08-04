@@ -1,5 +1,12 @@
 [
     {
+        "color":"green",
+        "detail":"Wild game is NFT Card Game online make with godot and unity, dapp web3 (react,next js) marketplace (sell and buy NFT) and mint (create) NFT upload to IPFS",
+        "name":"wildcard-game",
+        "lang":"C#, GODOT",
+        "link":"https://github.com/kai63001/wile-game"
+    },
+    {
         "color":"blue",
         "detail":"Discord bot youtube music node js and discord js",
         "name":"discord-youtube-music-bot",
@@ -33,13 +40,7 @@
         "name":"lullaby",
         "lang":"Dart",
         "link":"https://github.com/kai63001/lullaby"
-    },
-    {
-        "color":"green",
-        "detail":"Wile game is NFT Card Game multiplayer made with unity",
-        "name":"wile-game",
-        "lang":"C#",
-        "link":"https://github.com/kai63001/wile-game"
     }
+    
 
 ]

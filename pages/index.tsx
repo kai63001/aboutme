@@ -223,7 +223,7 @@ export default function Home() {
               Hi, I’m Supanat Konprom. Nice to meet you.
             </h2>
             <p className="mt-3 text-gray-400 w-3/4 m-auto">
-              Student Software Engineer 🚀 Experience building web, mobile
+              Software Engineer 🚀 Experience building web, mobile
               applications and games with other cool libraries and frameworks.
             </p>
           </div>
@@ -273,7 +273,7 @@ export default function Home() {
             </h3>
             <div className="grid sm:grid-cols-3 grid-cols-1 gap-4 mt-4">
               <Close
-                link="https://play.google.com/store/apps/developer?id=Laybiks"
+                link="https://play.google.com/store/search?q=laybiks&c=apps"
                 image="https://www.xda-developers.com/files/2019/09/play-store-dark-mode.jpg"
               >
                 <h3>Google Play Store</h3>
